@@ -38,6 +38,9 @@ CI Pipeline flow....
 ## TODO
 
 * Create drawing to visually display the flow
+* Create SBOM (software bill of materials)
+* Scan for license 
+* Auto create release notes
 * Helm chart scanning
 * Helm chart promotion
 * Jira GitHub integration [GitHub link](https://github.com/atlassian/github-for-jira#install-from-github-marketplace)
