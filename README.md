@@ -1,4 +1,4 @@
-## Welcome to The Build a SAAS App with Flask Course!
+# Welcome to The Build a SAAS App with Flask Course!
 
 *A video course where we build a real world web application with Flask, Celery,
 Redis, PostgreSQL, Stripe and Docker.*
@@ -6,7 +6,7 @@ Redis, PostgreSQL, Stripe and Docker.*
 **Full details on the course can be found here:**  
 [https://buildasaasappwithflask.com](https://buildasaasappwithflask.com/?utm_source=github&utm_medium=bsawf&utm_campaign=readme-top)
 
-### Getting started
+## Getting started
 
 ```sh
 cp .env.example .env
@@ -16,14 +16,14 @@ docker-compose up --build
 
 After everything is up and running, visit http://localhost:8000.
 
-### How does this source code differ than what's in the course?
+## How does this source code differ than what's in the course?
 
 In the course we build up a 4,000+ line Flask application in 15 stages while
 I'm at your side explaining my thought process along the way. You will get to
 see the source code grow from a single `app.py` file to a large code base that
 spans across dozens of files and folders.
 
-#### This repo includes up to the 6th stage. By this point in the code base, you'll be introduced to concepts such as:
+### This repo includes up to the 6th stage. By this point in the code base, you'll be introduced to concepts such as:
 
 - Using Docker to "Dockerize" a multi-service Flask app
 - Using Flask extensions
@@ -33,7 +33,7 @@ spans across dozens of files and folders.
 - Sending e-mails through Celery
 - Testing and analyzing your code base
 
-#### The rest of the course covers topics such as:
+### The rest of the course covers topics such as:
 
 - A crash course on Docker and Docker Compose (including multi-stage builds)
 - Going over the application's architecture and tech choices
