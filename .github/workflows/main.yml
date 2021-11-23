@@ -4,6 +4,13 @@ jobs:
   validatecode:
     runs-on: ubuntu-latest
     steps:
+      - uses: AppThreat/sast-scan-action@master
+        with:
+          type: "python"
+      - uses: actions/upload-artifact@v1
+        with:
+          name: reports
+          path: reports
       - uses: actions/checkout@v2
       - uses: hadolint/hadolint-action@v1.6.0
         with:
