@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: hadolint/hadolint-action@v1.6.0
         with:
-          failure-threshold: ignore
+          failure-threshold: none
   containerbuild:
     needs: validatecode
     runs-on: ubuntu-latest
