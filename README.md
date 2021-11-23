@@ -23,15 +23,28 @@ CI Pipeline flow....
 1. if these pass, container is retagged with _git-tag_ and pushed to the final ECR image repo
 1. continuous scanning happens on PROD ECR repo
 
+## Improvements Needed
+
+* only build if [files have changed or have been added](https://github.com/tj-actions/changed-files)
+* add tagging
+* add push to registry _if_ the scan passed
+* integrate with tooling selected by InfoSec
+* get feedback
+  * InfoSec
+  * Dev Teams management
+  * Architects
+  * SRE
+
 ## TODO
 
-* GitHub repo best practices
-  * global git
-    * set default branch to _main_ `git config --global init.defaultBranch main`
-    * create user and email
-  * don't allow _anyone_ to push to `main`
+* Create drawing to visually display the flow
 * Helm chart scanning
 * Helm chart promotion
 * Jira GitHub integration [GitHub link](https://github.com/atlassian/github-for-jira#install-from-github-marketplace)
   * create issues based on failing tests
   * link issues in Jira
+* GitHub repo best practices
+  * global git
+    * set default branch to _main_ `git config --global init.defaultBranch main`
+    * create user and email
+  * don't allow _anyone_ to push to `main`
