@@ -4,7 +4,7 @@ jobs:
   validatecode:
     runs-on: ubuntu-latest
     steps:
-      - uses: AppThreat/sast-scan-action@v1
+      - uses: AppThreat/sast-scan-action@master
         with:
           type: python
           output: reports
