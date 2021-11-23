@@ -25,7 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Build the Container image
-        run: docker build . --file Dockerfile --tag localbuild/testimage:latest
+        run: docker build . --file Dockerfile --tag localbuild/testimage:latest --tag localbuild/testimage:${{ github.run_number }}
       - uses: anchore/scan-action@v3
         id: scan
         with:
