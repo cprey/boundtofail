@@ -22,3 +22,11 @@ CI Pipeline flow....
 1. report generated
 1. if these pass, container is retagged with _git-tag_ and pushed to the final ECR image repo
 1. continuous scanning happens on PROD ECR repo
+
+## TODO
+
+* Helm chart scanning
+* Helm chart promotion
+* Jira GitHub integration
+  * create issues based on failing tests
+  * link issues in Jira
