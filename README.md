@@ -1,6 +1,6 @@
 # :skull: Bound to Fail
 
-Here is code that is bound to fail. It's using old docker images and not using best practices in multiple areas.
+Here is code that is bound to fail. It's using old docker images and not using best practices in multiple areas. This code demonstrates how GitHub actions can be used to safely create, scan, and publish container images using some nice best practices like _fail-left_ and _don't do unneeded work_
 
 ## Steps -
 
