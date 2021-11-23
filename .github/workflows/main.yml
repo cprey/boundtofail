@@ -19,7 +19,7 @@ jobs:
         id: scan
         with:
           image: "localbuild/testimage:latest"
-          fail-build: true
+          fail-build: false
           severity-cutoff: high
           acs-report-enable: true
       - name: upload Anchore scan SARIF report
