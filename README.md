@@ -25,8 +25,13 @@ CI Pipeline flow....
 
 ## TODO
 
+* GitHub repo best practices
+  * global git
+    * set default branch to _main_ `git config --global init.defaultBranch main`
+    * create user and email
+  * don't allow _anyone_ to push to `main`
 * Helm chart scanning
 * Helm chart promotion
-* Jira GitHub integration
+* Jira GitHub integration [GitHub link](https://github.com/atlassian/github-for-jira#install-from-github-marketplace)
   * create issues based on failing tests
   * link issues in Jira
