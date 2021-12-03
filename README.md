@@ -41,7 +41,7 @@ CI Pipeline flow....
 
 * Create drawing to visually display the flow
 * Create SBOM (software bill of materials)
-* Scan for license 
+* Scan for licenses
 * Auto create release notes
 * Helm chart scanning
 * Helm chart promotion
