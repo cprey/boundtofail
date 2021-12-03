@@ -2,16 +2,15 @@ name: Container Image CI
 on: [push]
 jobs:
   validatecode:
-    runs-on: ubuntu-latest
+    runs-on: python:3.8-slim-buster
     steps:
-      - uses: AppThreat/sast-scan-action@master
-        with:
-          type: python
-          output: reports
-      - uses: actions/upload-artifact@v2
-        with:
-          name: OSSscan
-          path: reports
+    - name: Check out code
+      uses: actions/checkout@v2
+
+    - name: Run Jake
+      uses: sonatype-nexus-community/jake-github-action@main
+      with:
+        packagesListFile: requirements.txt
   dockerfilescan:
     runs-on: ubuntu-latest
     steps:
